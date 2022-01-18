@@ -21,6 +21,7 @@ body {
     min-height: 100vh;
 }
 
+
 /* CSS For Background Video */
 .bg-video {
     position: fixed;
@@ -35,6 +36,7 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
 
 /* CSS For Cards & It's Components */
 .cards-container {
@@ -86,10 +88,118 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(20px);
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.img-container h2 {
+    color: #ffff;
+    letter-spacing: 1px;
+}
+
+.img-container img {
+    width: 70%;
+    transition: 0.35s;
+}
+
+.img-container img:hover {
+    cursor: pointer;
+    transform: scale(1.2) translateX(40px);
+}
+
+
+/* CSS for the colored circles */
+
+.color-title-heading {
+    color: #ffff;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+
+.product-color {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-color li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 15px;
+    background: #ffff;
+    color: #000000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+.color-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-color li:hover {
+    transform: scale(1.1);
+}
+
+.product-color li:nth-child(1) {
+    background: rgb(0, 122, 255);
+    background: #FF605C;
+}
+
+.product-color li:nth-child(2) {
+    background: rgb(88, 86, 214);
+    background: #FFBD44;
+}
+
+.product-color li:nth-child(3) {
+    background: rgb(175, 82, 222);
+    background: #00CA4E;
+}
+
+.product-color li:nth-child(4) {
+    background: rgb(255, 45, 85);
+}
+
+
+/* CSS for the Add To Cart Button */
+
+.cart-button {
+    width: 165px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: #000000;
+    border-radius: 25px;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.cart-icon {
+    font-size: 1.5rem;
+    color: #8B3DFF;
+    transition: 0.25s;
+}
+
+.cart-button:hover .cart-icon {
+    transform: translateX(5px);
 }
