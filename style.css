@@ -40,19 +40,40 @@ body {
 .cards-container {
     position: relative;
     width: 400px;
-    height: 400px;
-    background: rgb(0, 0, 0);
+    height: 500px;
 }
 
 .option-list {
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1;
 }
 
-.option-list li {
+.product-box {
     width: 100px;
     height: 100px;
-    background: #fff;
+    margin: 10px 0;
+    list-style: none;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-box img {
+    width: 80%;
+    transition: 0.5s;
+}
+
+.product-box:hover img {
+    transform: scale(1.1);
 }
 
 .img-container {
