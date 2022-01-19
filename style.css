@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(assets/imgs/bg2.jpg);
+    background-image: url(assets/imgs/bg1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -64,23 +64,24 @@ body {
     right: 0;
     width: 300px;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 25px;
     /* border: 1px solid rgba(255, 255, 255, 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5); */
-    /* border: 1px solid rgba(0, 0, 0, 0.15);
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
-    border-left: 1px solid rgba(0, 0, 0, 0.15); */
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    /* border-top: 2px solid rgba(0, 0, 0, 0.15);
+    border-left: 2px solid rgba(0, 0, 0, 0.15); */
     background: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
     padding: 40px 20px;
     padding-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: 50px; */
 }
+
 
 
 .title-container {
@@ -88,13 +89,14 @@ body {
     width: 100%;
     text-align: center;
     padding: 10px 10px;
-    border-bottom: 1px solid rgba(113 119 144 / 55%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .title-container h2 {
     width: 100%;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: normal;
     color: #ffff;
     letter-spacing: 1px;
 }
