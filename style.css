@@ -21,6 +21,10 @@ body {
     min-height: 100vh;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
 
 /* CSS For Background Video */
 .bg-video {
@@ -41,6 +45,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 /* CSS For Cards & It's Components */
@@ -63,9 +68,9 @@ body {
     margin: 10px 0;
     list-style: none;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    /* border: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-left: 1px solid rgba(0, 0, 0, 0.15); */
     background: rgba(0, 0, 0, 0.3);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(20px);
@@ -90,9 +95,12 @@ body {
     width: 350px;
     height: 100%;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    /* border: 1px solid rgba(255, 255, 255, 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5); */
+    /* border: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-left: 1px solid rgba(0, 0, 0, 0.15); */
     background: rgba(0, 0, 0, 0.3);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(20px);
@@ -102,9 +110,18 @@ body {
     align-items: center;
 }
 
+/* .img-container:nth-child(1) {
+    padding: 40px 0px;
+} */
+
 .img-container h2 {
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
     color: #ffff;
     letter-spacing: 1px;
+    padding: 0;
+    border-bottom: 1px solid rgba(113 119 144 / 55%);
 }
 
 .img-container img {
@@ -114,7 +131,7 @@ body {
 
 .img-container img:hover {
     cursor: pointer;
-    transform: scale(1.16) translateX(140px);
+    transform: scale(1.16) translateX(40px);
 }
 
 
@@ -123,6 +140,7 @@ body {
 .color-title-heading {
     color: #ffff;
     font-size: 1.2rem;
+    /* font-weight: bold; */
     letter-spacing: 1px;
 }
 
