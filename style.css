@@ -37,9 +37,14 @@ body {
     object-fit: cover;
 }
 
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* CSS For Cards & It's Components */
-.cards-container {
+.product-card {
     position: relative;
     width: 400px;
     height: 500px;
@@ -103,13 +108,13 @@ body {
 }
 
 .img-container img {
-    width: 70%;
-    transition: 0.35s;
+    width: 85%;
+    transition: all 0.55s;
 }
 
 .img-container img:hover {
     cursor: pointer;
-    transform: scale(1.2) translateX(40px);
+    transform: scale(1.16) translateX(140px);
 }
 
 
@@ -159,18 +164,18 @@ body {
 }
 
 .product-color li:nth-child(1) {
-    background: rgb(0, 122, 255);
     background: #FF605C;
+    background: rgb(6, 7, 61);
 }
 
 .product-color li:nth-child(2) {
-    background: rgb(88, 86, 214);
     background: #FFBD44;
+    background: rgb(105, 50, 14);
 }
 
 .product-color li:nth-child(3) {
-    background: rgb(175, 82, 222);
     background: #00CA4E;
+    background: rgb(0, 0, 0);
 }
 
 .product-color li:nth-child(4) {
