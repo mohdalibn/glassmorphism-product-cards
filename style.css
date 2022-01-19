@@ -29,21 +29,8 @@ body {
     overflow-x: hidden;
 }
 
-/* CSS For Background Video */
-.bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
-.bg-video video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
+/* CSS For Cards & It's Components */
 .cards-container {
     display: flex;
     justify-content: center;
@@ -51,7 +38,6 @@ body {
     gap: 20px;
 }
 
-/* CSS For Cards & It's Components */
 .product-card {
     position: relative;
     width: 350px;
@@ -114,7 +100,6 @@ body {
 
 
 /* CSS for the colored circles */
-
 .product-color {
     display: flex;
     flex-direction: column;
@@ -178,7 +163,6 @@ body {
 
 
 /* CSS for the Add To Cart Button */
-
 .cart-button {
     padding: 10px 20px;
     text-decoration: none;
