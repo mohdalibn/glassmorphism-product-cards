@@ -126,12 +126,12 @@ body {
 
 .img-container img {
     width: 85%;
-    transition: all 0.55s;
+    transition: all 0.25s;
 }
 
 .img-container img:hover {
     cursor: pointer;
-    transform: scale(1.16) translateX(40px);
+    transform: scale(1.15);
 }
 
 
@@ -167,7 +167,7 @@ body {
     color: #000000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: 0.35s;
+    transition: 0.25s;
 }
 
 .color-list {
