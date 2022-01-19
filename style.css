@@ -19,6 +19,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-image: url(assets/imgs/bg2.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 html,
@@ -51,48 +54,15 @@ body {
 /* CSS For Cards & It's Components */
 .product-card {
     position: relative;
-    width: 400px;
-    height: 500px;
-}
-
-.option-list {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-}
-
-.product-box {
-    width: 100px;
-    height: 100px;
-    margin: 10px 0;
-    list-style: none;
-    border-radius: 20px;
-    /* border: 1px solid rgba(0, 0, 0, 0.15);
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
-    border-left: 1px solid rgba(0, 0, 0, 0.15); */
-    background: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(20px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.product-box img {
-    width: 80%;
-    transition: 0.5s;
-}
-
-.product-box:hover img {
-    transform: scale(1.1);
+    width: 350px;
+    height: 450px;
 }
 
 .img-container {
     position: absolute;
     top: 0;
     right: 0;
-    width: 350px;
+    width: 300px;
     height: 100%;
     border-radius: 20px;
     /* border: 1px solid rgba(255, 255, 255, 0.25);
@@ -105,26 +75,32 @@ body {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(20px);
     padding: 40px 20px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* margin-top: 50px; */
 }
 
-/* .img-container:nth-child(1) {
-    padding: 40px 0px;
-} */
 
-.img-container h2 {
+.title-container {
+    position: absolute;
     width: 100%;
     text-align: center;
-    /* font-weight: normal; */
-    color: #ffff;
-    letter-spacing: 1px;
-    padding: 0;
+    padding: 10px 10px;
     border-bottom: 1px solid rgba(113 119 144 / 55%);
 }
 
+.title-container h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #ffff;
+    letter-spacing: 1px;
+}
+
 .img-container img {
+    margin-top: 60px;
     width: 85%;
     transition: all 0.25s;
 }
@@ -137,20 +113,18 @@ body {
 
 /* CSS for the colored circles */
 
-.color-title-heading {
-    color: #ffff;
-    font-size: 1.2rem;
-    /* font-weight: bold; */
-    letter-spacing: 1px;
-}
-
-
 .product-color {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.color-title-heading {
+    color: #ffff;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
 }
 
 .product-color li {
