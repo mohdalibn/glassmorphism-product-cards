@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(assets/imgs/bg1.jpg);
+    background-image: url(assets/imgs/bg2.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -32,9 +32,11 @@ body {
 
 /* CSS For Cards & It's Components */
 .cards-container {
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -48,7 +50,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 300px;
+    max-width: 300px;
     height: 100%;
     border-radius: 25px;
     /* border: 1px solid rgba(255, 255, 255, 0.25);
