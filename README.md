@@ -14,3 +14,6 @@ Front-end project featuring the use of Glassmorphism.
 
 # ![use-project (1)](https://user-images.githubusercontent.com/95453430/155046492-760c134f-e32c-436c-a7a8-4ca134a878b9.svg)
 
+- CLick on the green Code button on the top of this page and download the project zip file locally and extract it onto a folder that is easily accessible on your computer.
+- Open the folder and run the index.html file on your favourite browser (Google Chrome Recommended).
+- Play around with the project!
